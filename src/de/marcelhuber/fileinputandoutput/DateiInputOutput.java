@@ -38,7 +38,7 @@ public class DateiInputOutput {
         pathCSVDatei = fs.getPath(pathFolderCSVDatei.toString(), csvDateiname);
     }
 
-    public DateiInputOutput(Builder build) {
+    private DateiInputOutput(Builder build) {
         this.dateiName = build.dateiName;
         this.dateiOrdnerName = build.dateiOrdnerName;
         pathFolderCSVDatei = fs.getPath(pfadAktuellesVerzeichnis

@@ -15,7 +15,7 @@ public class DateiInputOutputDemo {
         new DateiInputOutput().go();
         System.out.println("");
         System.out.println("");
-        System.out.print("Alternaiv: ".toUpperCase());
+        System.out.print("Alternativ: ".toUpperCase());
         System.out.println("go() mit " + "Builder!".toUpperCase());
         System.out.println("");
         System.out.println("");
@@ -28,8 +28,8 @@ public class DateiInputOutputDemo {
 
     private void goFrageAntwort() {
         DateiInputOutput dummyFrage = new DateiInputOutput.Builder()
-                .dateiOrdnerName("csvDateiOrdner/FragenSammlung")
-                .dateiName("Frage01.txt").build();
+                .dateiName("Frage01.txt")
+                .dateiOrdnerName("csvDateiOrdner/FragenSammlung").build();
         dummyFrage.go();
         System.out.println("");
         System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXX");
